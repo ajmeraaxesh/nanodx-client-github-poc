@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-tradegothic;
+  }
+
+  h1 {
+    @apply font-venera tracking-wider;
+  }
+
+  .btn {
+    @apply text-brand-blue  py-2 px-4 border border-brand-blue rounded font-tradegothic-bold;
+  }
+
+  .btn:hover {
+    @apply border-brand-blue text-brand-blue  bg-brand-dark-gray bg-opacity-25;
+  }
+
+  .btn:focus {
+    @apply outline-none shadow-none;
+  }
+
+  .btn-reverse {
+    @apply bg-brand-blue text-white  py-2 px-4 border border-brand-blue rounded font-tradegothic-bold;
+  }
+
+  .btn-reverse:hover {
+    @apply bg-white text-brand-blue border border-brand-blue  py-2 px-4  rounded font-tradegothic-bold;
+  }
+
+  .btn-reverse:focus {
+    @apply outline-none shadow-none;
+  }
+
+  .btn-delete {
+    @apply bg-white text-red-600  py-2 px-4 border border-red-600 rounded font-tradegothic-bold;
+  }
+
+  .btn-delete:hover {
+    @apply border-brand-red text-brand-red  bg-gray-500 bg-opacity-25;
+  }
+
+  .btn-delete:focus {
+    @apply outline-none shadow-none;
+  }
+
+  .asteriskLabel:after {
+    content: '*';
+  }
+
+  .react-geocoder {
+    z-index: 20;
+  }
+
+  .react-geocoder-item {
+    --bg-opacity: 0.75;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    border-bottom-width: 1px;
+
+    --border-opacity: 1;
+    border-color: #005d7d;
+    border-color: rgba(0, 93, 125, var(--border-opacity));
+    width: 100%;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    z-index: 20;
+  }
+
+  @font-face {
+    font-family: TradeGothic-Bold;
+    font-weight: 400;
+    src: url(../../public/fonts/TradeGothicLTStd-BoldExt.ttf);
+  }
+
+  @font-face {
+    font-family: TradeGothic;
+    font-weight: 400;
+    src: url(../../public/fonts/TradeGothicLTStd-Extended.ttf);
+  }
+
+  @font-face {
+    font-family: Venera;
+    font-weight: 400;
+    src: url(../../public/fonts/Venera-900.otf);
+  }
+
+  @font-face {
+    font-family: Montserrat-Regular;
+    font-weight: 400;
+    src: url(../../public/fonts/montserratregular.ttf);
+  }
+
+  @font-face {
+    font-family: Montserrat-Medium;
+    font-weight: 400;
+    src: url(../../public/fonts/montserratmedium.ttf);
+  }
+
+  @font-face {
+    font-family: Montserrat-SemiBold;
+    font-weight: 400;
+    src: url(../../public/fonts/montserratsemibold.ttf);
+  }
+
+  @font-face {
+    font-family: Montserrat-Bold;
+    font-weight: 400;
+    src: url(../../public/fonts/montserratbold.ttf);
+  }
+
+  [type='text'],
+  [type='password'],
+  [type='email'],
+  [type='number'],
+  [type='url'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='week'],
+  [type='time'],
+  [type='search'],
+  [type='tel'],
+  [type='checkbox'],
+  select,
+  select[multiple],
+  textarea {
+    @apply sm:leading-5 rounded-md shadow-sm  text-brand-blue border-gray-300 focus:border-brand-blue focus:ring-brand-blue;
+  }
+
+  [type='radio'] {
+    @apply sm:leading-5 shadow-sm  text-brand-blue border-gray-300 focus:border-brand-blue focus:ring-brand-blue;
+  }
+}
