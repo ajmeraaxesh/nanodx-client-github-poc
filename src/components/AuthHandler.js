@@ -1,7 +1,7 @@
 import {useRouter} from 'next/router'
 import {useAuth0} from '@auth0/auth0-react'
 
-import UnAuthenticatedApp from '@components/UnauthenticatedApp'
+import UnAuthenticatedApp from '@components/UnAuthenticatedApp'
 import {AuthenticationLoading} from '@components/CommonComponents'
 import {TESTINDEX} from '@lib/constants'
 
