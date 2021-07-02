@@ -19,9 +19,9 @@ const fetcher = (endpoint, token = null, {body, ...customConfig} = {}) => {
   }
 
   let API_URL = typeof window !== undefined ? window.location.host : null
-  if (process.env.NODE_ENV !== 'production') {
+//  if (process.env.NODE_ENV !== 'production') {
     API_URL = process.env.NEXT_PUBLIC_SERVER_URL
-  }
+//  }
 
   // console.log('Fetcher Lib request config: ', config)
 
